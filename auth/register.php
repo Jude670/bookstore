@@ -2,7 +2,14 @@
 <?php require "../config/config.php"; ?>
 <?php
 
-     if(isset($_POST['submit'])) {
+
+    if(isset($_SESSION['username'])) {
+        header("location: ".APPURL."");
+    }
+
+
+
+    if(isset($_POST['submit'])) {
         // echo "<script>success</script>";
         if(empty($_POST['username']) OR empty($_POST['email']) OR empty($_POST['password'])) {
             echo "<script>alert('one or more inputs are empty'); </script>";
