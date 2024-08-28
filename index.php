@@ -25,6 +25,4 @@
             </div>
             <br>
             <?php endforeach; ?>
-
-
          <?php require "includes/footer.php"; ?>
